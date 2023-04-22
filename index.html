@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Break The Creatives</title>
+  </head>
+  <style>
+    :root {
+      --step--2: clamp(0.87rem, calc(0.75rem + 0.58vw), 1.2rem);
+      --step--1: clamp(1.04rem, calc(0.88rem + 0.8vw), 1.5rem);
+      --step-0: clamp(1.25rem, calc(1.03rem + 1.09vw), 1.88rem);
+      --step-1: clamp(1.5rem, calc(1.21rem + 1.47vw), 2.34rem);
+      --step-2: clamp(1.8rem, calc(1.41rem + 1.97vw), 2.93rem);
+    }
+
+    body {
+      color: white;
+      background: #e13000;
+      font-size: var(--step--1);
+      font-family: sans-serif;
+      line-height: 1.4;
+    }
+
+    a {
+      color: white;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    /* Base typesetting */
+
+    h1 {
+      font-size: var(--step-2);
+    }
+
+    h2 {
+      font-size: var(--step-1);
+    }
+
+    h3 {
+      font-size: var(--step-0);
+    }
+
+    /* Set line lengths */
+    p,
+    li,
+    blockquote:not([class]) {
+      max-width: 70ch;
+    }
+
+    h1,
+    h2,
+    h3 {
+      max-width: 50ch;
+    }
+  </style>
+  <script>
+    function copyText() {
+      /* Copy text into clipboard */
+      navigator.clipboard.writeText("flip@breakthecreatives.nl");
+    }
+  </script>
+  <body>
+    <h1>
+      Websites voor het volgend millennium, met meer als je standaard portie
+      creativiteit.
+    </h1>
+    <p>
+      Geen doorsnee websites, wel een creatieve samenwerking voor een
+      efficiënte, toegankelijke en duurzame online ervaring.
+    </p>
+    <p style="font-size: var(--step--2)">
+      Contact:
+      <a href="mailto:flip@breakthecreatives.nl">flip@breakthecreatives.nl</a>
+      <span><button class="tooltip" onclick="copyText()">Copy</button> </span>
+    </p>
+  </body>
+</html>
